@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #June 3rd, 2015
-#Cameron Grisdale
+#Cameron Grisdale and Shannon Sibbald
 #Input gff annotation file and alignment pileup file and re-annotate gene models based on alignment data
 
 #Imports
@@ -122,11 +122,10 @@ if __name__ == '__main__':
   txn=covgetter(mpileup)
   gmap,fmap,col,strd=generate_maps_natans(annotation)
   
-  x=0
-  for k,v in txn.items():
-    x+=1
-    if x > 10:
-      break
-    else:
-      print k,v
-
+#  x=0
+#  for k,v in txn.items():
+#    x+=1
+#    if x > 10:
+#      break
+#    else:
+#      print k,v
